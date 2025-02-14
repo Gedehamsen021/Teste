@@ -10,7 +10,7 @@ const settings = {
   noise: 30,
   layerCount: isMobile ? 1 : 3,
   layerDistance: 5,
-  heartBeat: true,
+  heartBeat: false,
   beatStrength: 200 };
 
 
@@ -42,7 +42,7 @@ function redraw() {
     initDirection: 'none' });
 
 };
-
+/*
 const gui = new dat.GUI();
 gui.add(settings, 'particleGap', 1, 20, 1).onChange(redraw);
 gui.add(settings, 'particleSize', .5, 20, .1).onChange(redraw);
@@ -58,6 +58,7 @@ if (isMobile) {
 }
 
 window.addEventListener('resize', redraw);
+*/
 
 setInterval(() => {
   if (settings.heartBeat) {
