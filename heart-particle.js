@@ -10,7 +10,7 @@ const settings = {
   noise: 30,
   layerCount: isMobile ? 1 : 3,
   layerDistance: 5,
-  heartBeat: false,
+  heartBeat: true,
   beatStrength: 200 };
 
 
